@@ -1,0 +1,9 @@
+$bodyColor: red;
+
+@import 'bootstrap';
+
+
+body {
+  background-color: $bodyColor;
+  color: #ffffff;
+}
