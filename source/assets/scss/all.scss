@@ -1,9 +1,10 @@
-$bodyColor: red;
+@import 'methods/main-variables';
 
-@import 'bootstrap';
-
+/*----------  vendors  ----------*/
+@import 'vendors/bs4/bootstrap';
+/*----------  vendors  ----------*/
 
 body {
-  background-color: $bodyColor;
-  color: #ffffff;
+  background-color: $bodyBgColor;
+  color: $bodyTextColor;
 }
