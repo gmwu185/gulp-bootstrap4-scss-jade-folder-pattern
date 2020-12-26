@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.js"],"names":["console","log","$"],"mappings":";;AAAAA,OAAO,CAACC,GAAR,CAAY,QAAZ;AAEAC,CAAC,CAAC,YAAY;AACZF,EAAAA,OAAO,CAACC,GAAR,CAAY,YAAZ,EADY,CAEZ;AACD,CAHA,CAAD","file":"all.js","sourcesContent":["console.log('js all');\n\n$(function () {\n  console.log('jquery run');\n  // alert('jQuery run')\n})\n\n\n"]}
