@@ -16,6 +16,20 @@ console.log(options);
 // production || develop
 // # gulp --env production
 
+gulp.task('iconfont', function () {
+  return gulp
+    .src(
+      [
+        './node_modules/bootstrap/dist/fonts/**'
+        ,
+        './node_modules/@fortawesome/fontawesome-free/webfonts/**' // fontawesome 5.x 版本
+        // ,
+        // './node_modules/material-design-icons/iconfont/**' // 如需使用報行安裝指令 npm i material-design-icons --save
+      ]
+    )
+    .pipe(gulp.dest('./output/assets/iconfont'))
+});
+
 gulp.task('jade', function() {
   return gulp
     .src('./source/jade/**/!(_)*.jade') // "!(_)" 檔名前加 "_" 下底線時，檔案不處理 (多半為連結檔)
@@ -132,6 +146,7 @@ gulp.task('build',
   gulp.series(
     'clean',
     vendorJs,
+    'iconfont',
     gulp.parallel(
       'jade', 
       'sass', 
@@ -145,6 +160,7 @@ gulp.task('default',
   gulp.series(
     'clean', 
     vendorJs,
+    'iconfont',
     gulp.parallel(
       'jade', 
       'sass', 

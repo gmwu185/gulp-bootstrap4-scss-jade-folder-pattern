@@ -1,8 +1,6 @@
 # npm 與 Gulp 前端工具、bower 插件指令，執行指令依序輸入
-- `npm install -g bower`
 - `npm install`
-- `bower install`：透過 bower 前端套件下載至 `bower_components` 資料夾內。
-- `gulp`：執行開發環境
+- `gulp`：執行開發環境 (版本別需要 npm-6.14 & node-v14.13 以前版本)
 - `gulp --env production` & `gulp build --env production`：輸出打包整個專案，處理包括
   - 去除註解
   - 壓縮圖片
@@ -21,3 +19,4 @@
   - `pages`：獨立頁面專用或是少量頁面共用為主。
   - `utils`：工具類型樣式分類為主，比較 [sass-7-1-pattern.scss (sass資料夾模版)](https://gist.github.com/rveitch/84cea9650092119527bc) 放置 sass 相關函式內容為主不太相同。
   - `vendors`：放置插件、套件、框架為主的樣式分類，像是 bootstrap 取出的客製修改的 Scss 檔存放於此，用來取代 node_module 內對應 Scss 檔。
+  

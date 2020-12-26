@@ -1,3 +1,7 @@
+._*
+#.DS_Store
+.DS_Store
+
 .publish
 .tmp/
 bower_components/

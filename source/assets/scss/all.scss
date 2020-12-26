@@ -1,10 +1,83 @@
 @import 'methods/main-variables';
 
-/*----------  vendors  ----------*/
-@import 'vendors/bs4/bootstrap';
-/*----------  vendors  ----------*/
+
+/*=============================================
+=                   vendors                   =
+=============================================*/
+
+/* fontawesome-free (5)
+-------------------------------------------------- */
+/*----------  fontawesome-free (5) -- 輸出自定路徑   ----------*/
+@import 'vendors/fontawesome5/variables';
+@import 'vendors/fontawesome5/v4-shims';
+@import 'vendors/fontawesome5/fontawesome';
+@import 'vendors/fontawesome5/brands';
+@import 'vendors/fontawesome5/regular';
+@import 'vendors/fontawesome5/solid';
+@import 'vendors/fontawesome5/shims';
+/*----------  /fontawesome-free (5) -- 輸出自定路徑   ----------*/
+
+/*----------  fontawesome-free (5) -- 輸出預設路徑   ----------*/
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+/*----------  /fontawesome-free (5) -- 輸出預設路徑   ----------*/
+
+/* End of fontawesome-free (5)
+-------------------------------------------------- */
+
+
+// /*----------  vendors  ----------*/
+// @import 'vendors/bs4/bootstrap';
+// /*----------  vendors  ----------*/
+
+
+// @import 'vendors/bs4/bootstrap';
+@import "../../../node_modules/bootstrap/scss/functions";
+// @import "../../../node_modules/bootstrap/scss/variables";
+@import "vendors/bs4/Variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/code";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/tables";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "../../../node_modules/bootstrap/scss/button-group";
+@import "../../../node_modules/bootstrap/scss/input-group";
+@import "../../../node_modules/bootstrap/scss/custom-forms";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/card";
+@import "../../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../../node_modules/bootstrap/scss/pagination";
+@import "../../../node_modules/bootstrap/scss/badge";
+@import "../../../node_modules/bootstrap/scss/jumbotron";
+@import "../../../node_modules/bootstrap/scss/alert";
+@import "../../../node_modules/bootstrap/scss/progress";
+@import "../../../node_modules/bootstrap/scss/media";
+@import "../../../node_modules/bootstrap/scss/list-group";
+@import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/toasts";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/tooltip";
+@import "../../../node_modules/bootstrap/scss/popover";
+@import "../../../node_modules/bootstrap/scss/carousel";
+@import "../../../node_modules/bootstrap/scss/spinners";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/print";
+
+/*============  End of vendors  =============*/
+
 
 body {
   background-color: $bodyBgColor;
-  color: $bodyTextColor;
+  // color: $bodyTextColor;
 }
